@@ -1,42 +1,36 @@
 package de.martinhomuth.workoutperfection;
 
-import de.martinhomuth.workoutperfection.MuscleGroups;
-
 /**
- * @brief This class represents a single exercise.
+ * This class represents a single exercise.
  */
 
-public class Exercise {
-
-    public Exercise(String name, String category, MuscleGroups musclegroup) {
-        this.name = name;
-        this.category = category;
-        this.musclegroup = musclegroup;
-    }
+class Exercise {
 
     /**
-     * @brief Name of the exercise itself
+     * Name of the exercise itself
      */
-    private String name;
+    private String mName;
 
-    private String category;
+    /**
+     * brief Every exercise targets 1..n musclegroups
+     */
+    private MuscleGroups mMuscleGroups;
 
-    private MuscleGroups musclegroup;
-
-
-    public String getName()
-    {
-        return this.name;
+    Exercise(String name, MuscleGroups musclegroups) {
+        mName = name;
+        mMuscleGroups = musclegroups;
     }
 
-    public String getCategory()
-    {
-        return this.category;
+    String getName() {
+        return mName;
     }
 
-    public MuscleGroups getMusclegroup()
-    {
-        return this.musclegroup;
+    MuscleGroups getMuscleGroups() {
+        return mMuscleGroups;
+    }
 
+    String getCategory() {
+        return "Legs";
     }
 }
+
