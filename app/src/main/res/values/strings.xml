@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">WorkoutPerfection</string>
+    <string name="new_workout">New Workout</string>
+    <string name="get_next_workout">Get Next Workout</string>
+    <string name="new_workout_name">Name</string>
 </resources>
